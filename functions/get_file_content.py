@@ -5,9 +5,6 @@ from functions.config import *
 
 def get_file_content(working_directory, directory):
   try:
-    print(f'working_directory: {working_directory}')
-    print(f'directory: {directory}')
-
     full_path = os.path.join(working_directory, directory)
 
     if os.path.isdir(full_path):
