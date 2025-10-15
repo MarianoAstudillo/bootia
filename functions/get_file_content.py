@@ -10,7 +10,6 @@ def get_file_content(working_directory, directory):
     if os.path.isdir(full_path):
       raise Exception(f'"{full_path}" is not a directory')
 
-    # Normalize both paths
     full_path = os.path.abspath(full_path)
     working_directory = os.path.abspath(working_directory)
     
